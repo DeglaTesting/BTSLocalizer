@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BTSLocalizer"
+  id="myeclipse.1387728141041"
+  context-root="/BTSLocalizer"
+  j2ee-spec="6.0"
+  archive="BTSLocalizer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

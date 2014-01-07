@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+    
+    <form-bean name="setcsvForm" type="com.mp2srt.struts.form.SetcsvForm" />
+    <form-bean name="getbtsForm" type="com.mp2srt.struts.form.GetbtsForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    
+    <action
+      attribute="setcsvForm"
+      input="/addbts.jsp"
+      name="setcsvForm"
+      path="/setcsv"
+      scope="request"
+      type="com.mp2srt.struts.action.SetcsvAction"
+      cancellable="true" />
+    <action
+      attribute="getbtsForm"
+      input="/map.jsp"
+      name="getbtsForm"
+      path="/getbts"
+      scope="request"
+      type="com.mp2srt.struts.action.GetbtsAction"
+      cancellable="true">
+      <forward name="get" path="/map.jsp" />
+    </action>
+    
+    
+
+  </action-mappings>
+
+  <message-resources parameter="com.mp2srt.struts.ApplicationResources" />
+</struts-config>
+

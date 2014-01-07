@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/setcsv.do" location="480,180" dimension="242,96" />
+  <StrutsActivity path="/addbts.jsp" location="555,45" dimension="89,51" />
+  <StrutsActivity path="/getbts.do" location="50,50" dimension="243,96" />
+  <StrutsActivity path="/map.jsp" location="150,210" dimension="136,51" />
+  <StrutsTransition id="/addbts.jsp,null,/setcsv.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="601,96" />
+      <AbsolutePoint location="601,180" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getbts.do,get,/map.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="218,146" />
+      <AbsolutePoint location="218,210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/map.jsp,null,/getbts.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="171,210" />
+      <AbsolutePoint location="171,146" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/getbts.do,valide,/map.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="218,146" />
+      <AbsolutePoint location="218,210" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
